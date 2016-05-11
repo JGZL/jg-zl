@@ -7,11 +7,11 @@
                 <p>{{ site.about }}</p>
             </div>
  -->            <div class="col-lg-6">
-                <h4>相关链接</h4>
+                <h4>友情链接</h4>
                 <div class="hline-w"></div>
                 <p>
                     {% for network in site.social %}
-                        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
+                        <a href="{{ network.url }}" class="btn-social btn-outline" target="blank">中国制冷网</a>
                     {% endfor %}
                 </p>
             </div>

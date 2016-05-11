@@ -4,8 +4,8 @@
 title: "江苏金冠制冷有限公司"
 description: "test"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-# url: "http://www.jg-zl.com"
-url: ""
+url: "http://www.jg-zl.com"
+# url: ""
 baseurl: "/" #important: start with /
 
 # Build settings
@@ -46,6 +46,7 @@ address:
   - lines: 
     - 地址：江苏南京江宁区隐龙路
     - 电话：13605173569
+    - 邮箱：yiyuan86@foxmail.com
 
 email: yiyuan86@foxmail.com
 tel: +86 13605173569
