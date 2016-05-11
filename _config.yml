@@ -4,8 +4,8 @@
 title: "江苏金冠低碳制冷有限公司"
 description: "test"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-url: "http://www.jg-zl.com"
-# url: ""
+# url: "http://www.jg-zl.com"
+url: ""
 baseurl: "/" #important: start with /
 
 # Build settings
