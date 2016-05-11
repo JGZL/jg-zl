@@ -11,8 +11,12 @@
                 <div class="hline-w"></div>
                 <p>
                     {% for network in site.social %}
+                    {% if network.url == "http://www.jnjc.org" %}
                         <a href="{{ network.url }}" target="blank"><font color = "#bfc9d3">全国节能监测管理中心</font></a>
+                    {% endif %}
+                    {% if network.url == "http://www.coldchina.com" %}
                         <a href="{{ network.url }}" target="blank"><font color = "#bfc9d3">中国制冷网</font></a>
+                    {% endif %}
                     {% endfor %}
                 </p>
             </div>
