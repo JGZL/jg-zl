@@ -31,9 +31,9 @@ colors:  #in hex code if not noted else
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
   - title: dribbble
+    url: http://www.jnjc.org
+  - title: facebook
     url: http://www.coldchina.com
-  # - title: facebook
-  #   url:
   # - title: twitter
   #   url: 
   # - title: instagram
