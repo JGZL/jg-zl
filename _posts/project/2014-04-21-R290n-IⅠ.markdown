@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "R290n/Ⅱ：家用及工业空调使用"
+title:  "案例二  B公司"
 date:   2014-04-25 16:54:46
 author: Marcel Newman
 categories:
