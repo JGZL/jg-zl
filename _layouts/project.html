@@ -17,16 +17,16 @@ layout: default
         </div>
         <div class="col-lg-4 col-lg-offset-1">
             <div class="spacing"></div>
-            <h4>Project Details</h4>
+            <h4>案例细节</h4>
             <div class="hline"></div>
-            <p><b>Date:</b> {{ page.date | date: "%b %-d, %Y" }}</p>
-            <p><b>Author:</b> {{ page.author }}</p>
-            <p><b>Categories:</b> {{ page.categories }}</p>
-            <p><b>Tagged:</b> {{ page.tagged }}</p>
-            <p><b>Client:</b> {{ page.client }}</p>
-            <p><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>
+            <p><b>时间:</b> {{ page.date | date: "%b %-d, %Y" }}</p>
+            <p><b>相关人员:</b> {{ page.author }}</p>
+            <p><b>服务行业:</b> {{ page.tagged }}</p>
+            <p><b>客户:</b> {{ page.client }}</p>
+            <p><b>相关网站:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>
         </div>
-    </div><! --/row -->
-</div><! --/container -->
-	 
-{% include portfolio.html title="Related Works." limit=5 %}
+    </div>
+</div>
+
+<br>
+<br>
