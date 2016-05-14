@@ -57,14 +57,14 @@ permalink: /
         <div class="col-lg-4">
             <h4>新闻中心</h4>
             <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:3 %} 
+            {% for post in site.tags['news_center'] limit:3 %} 
                 <p><a href="{{ post.url | prepend: site.url }}">{{ post.title }}.</a></p>
             {% endfor %} 
         </div>
         <div class="col-lg-4">
             <h4>产品介绍</h4>
             <div class="hline"></div>
-            {% for post in site.categories['product'] limit:3 %} 
+            {% for post in site.tags['our_prod'] limit:3 %} 
                 <p><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></p>
             {% endfor %}
         </div>

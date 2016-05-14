@@ -6,6 +6,8 @@ author: 新浪财经
 categories: 
 - blog
 - 行业资讯
+tags:
+- news_center
 img: 
 thumb: 
 ---
