@@ -11,7 +11,7 @@ permalink: /blog/
 
         <div class="col-lg-8">
         {% for post in paginator.posts %}
-            {% for post in site.categories['blog'] %}
+        {% if post.categories['blog'] }
 
                 {% if post.img %}
                 <a href="{{ post.url | prepend: site.url }}">
@@ -25,7 +25,7 @@ permalink: /blog/
                 <div class="hline"></div>
 
                 <div class="spacing"></div>
-            {% endfor %}
+                {% endif %}
             {% endfor %}
         </div>
 
