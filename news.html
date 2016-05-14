@@ -1,7 +1,7 @@
 ---
-layout: blog
-title: Blog
-permalink: /blog/
+layout: news
+title: News
+permalink: /news/
 ---
 
 <div class="container mtb">
@@ -10,7 +10,7 @@ permalink: /blog/
 
         <div class="col-lg-8 col-lg-offset-2">
 
-            {% for post in site.categories['blog'] %}
+            {% for post in site.categories['news'] %}
 
                 {% if post.img %}
                 <a href="{{ post.url | prepend: site.url }}">

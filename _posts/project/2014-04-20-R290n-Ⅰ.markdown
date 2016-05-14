@@ -1,20 +1,17 @@
 ---
 layout: project
-title:  "案例一  A公司"
+title:  "案例一 福建省中延菌菇业有限公司"
 date:   2014-04-20 16:54:46
-author: Marcel Newman
+author: 金冠低碳制冷
 categories:
 - project
 img: 
 thumb: 
 carousel:
-- 
-tagged: Flat, UI, Development
-client: Wonder Corp.
-website: http://blacktie.co
+- zhongyan1.jpg
+tagged: 生态农业
+client: 福建省中延菌菇业有限公司
+website: http://www.jg-zl.com
 ---
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+中延菌菇用地总面积100000平方米，建筑面积80000平方米，总投资3000万元，首期投资1000万元，建成年产数千吨新鲜食用菌生产流水线。工厂配有200多万成套制冷设备及配套管线、泵站，设有大型自动拌料机、自动装瓶机、大型灭菌锅，实行单元智能控制的自动调温、调湿、返风换气系统。装备了直连主线的1250KV变压配电设 施，同时自备了200千瓦发电机组，设立带空调的收购车间和包装、加工车间，建立500平方米的冷库，有6000多只周转框，并建造450 平方米办公管理用房。有生产厂房120多间，每间厂房排放菌棒7000多袋，可周年批量生产。

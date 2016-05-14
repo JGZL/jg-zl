@@ -1,0 +1,16 @@
+---
+layout: project
+title:  "案例二 绿宝生态农业"
+date:   2015-04-25 16:54:46
+author: 金冠低碳制冷
+categories:
+- project
+img: 
+thumb: 
+carousel:
+- lvbao1.jpg
+- lvbao2.jpg
+tagged: 生态农业
+client: 绿宝生态农业
+website: http://www.jg-zl.com
+---
