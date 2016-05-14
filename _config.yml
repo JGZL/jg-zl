@@ -29,7 +29,7 @@ colors:  #in hex code if not noted else
   
   
 paginate: 1
-paginate_path: "/categories/page:num"
+paginate_path: "categories/page:num"
 gems: [jekyll-paginate]
 ### CONTACT SETTINGS ###
 
