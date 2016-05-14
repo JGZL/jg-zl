@@ -28,6 +28,9 @@ colors:  #in hex code if not noted else
   footer_content: "#bfc9d3"
   
   
+paginate: 1
+paginate_path: "/categories/page:num"
+gems: [jekyll-paginate]
 ### CONTACT SETTINGS ###
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
