@@ -52,3 +52,31 @@ permalink: /
 
 <!-- {% include portfolio.html title="产品介绍" limit=10 %} -->
 
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-4">
+            <h4>新闻中心</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['blog'] limit:3 %} 
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
+            {% endfor %} 
+        </div>
+        <div class="col-lg-4">
+            <h4>产品介绍</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['product'] limit:3 %} 
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            {% endfor %}
+        </div>
+
+        <div class="col-lg-4">
+            <h4>最新案例</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['project'] limit:3 %} 
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
+            {% endfor %} 
+        </div>
+
+    </div>
+</div>
+
