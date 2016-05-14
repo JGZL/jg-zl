@@ -5,7 +5,7 @@ date:   2015-04-25 16:54:46
 author: 金冠低碳制冷
 categories:
 - project
-img: 
+img: lvbao1.jpg
 thumb: 
 carousel:
 - lvbao1.jpg
