@@ -5,8 +5,8 @@ title: "江苏金冠低碳制冷有限公司"
 description: "test"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 
-url: "http://www.jg-zl.com"
-# url: ""
+# url: "http://www.jg-zl.com"
+url: ""
 
 baseurl: "/" #important: start with /
 
@@ -49,6 +49,7 @@ address:
     - 地址：江苏南京江宁区隐龙路
     - 电话：13605146966
     - 邮箱：yiyuan86@126.com
+    - 联系人：张先生
 
 email: yiyuan86@126.com
 tel: +86 13605146966
