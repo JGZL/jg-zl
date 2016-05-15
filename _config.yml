@@ -5,8 +5,8 @@ title: "江苏金冠低碳制冷有限公司"
 description: "test"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 
-url: "http://www.jg-zl.com"
-# url: ""
+# url: "http://www.jg-zl.com"
+url: ""
 
 baseurl: "/" #important: start with /
 
@@ -29,7 +29,7 @@ colors:  #in hex code if not noted else
   
   
 paginate: 1
-# paginate_path: "blog/page:num"
+paginate_path: "tag/page:num"
 gems: [jekyll-paginate]
 ### CONTACT SETTINGS ###
 

@@ -8,6 +8,8 @@ categories:
 - 行业资讯
 tags:
 - news_center
+- jekyll
+- pagination
 img: 
 thumb: 
 ---
