@@ -15,7 +15,7 @@ permalink: /blog/
             {% endfor %}
             {% for post in paginator.posts %}
             {% endfor %}
-            {% for post in site.posts %}
+            {% for post in site.categories['blog'] %}
 
                 {% if post.img %}
                 <a href="{{ post.url | prepend: site.url }}">
