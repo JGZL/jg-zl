@@ -1,0 +1,31 @@
+---
+layout: case
+title: Case
+permalink: /case/
+---
+
+<div class="container">
+    <br>
+    <br>
+    <br>
+<h2 class="headline">主要案例</h2>
+<div class="row port works">
+{% for post in site.tags['case'] %}
+    <div class="row-item one-third column identity photography tehnology">
+        <div class="work">
+            <a href="{{ post.url | prepend: site.url }}"  class="work-image">
+                <img src="/images/case/{{ post.img }}" alt="{{ post.title }}">
+                <div class="link-overlay fa fa-chevron-right">
+                </div>
+            </a>
+            <a href="{{ post.url | prepend: site.url }}" class="work-name">{{ post.title }}</a>
+            <div class="tags">
+                {{ post.tagged }}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+</div>
+
