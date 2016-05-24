@@ -4,48 +4,150 @@ title: Contact
 permalink: /contact/
 ---
 
-<div id="contactwrap"></div>
+<!-- <div class="container">
 
-<div class="container mtb">
-    <div class="row">
-        <!-- <div class="col-lg-8">
-            <h4>Just Get In Touch!</h4>
-            <div class="hline"></div>
-                <p>{{ site.about }}</p>
-                <form role="form">
-                  <div class="form-group">
-                    <label for="InputName1">Your Name</label>
-                    <input type="text" class="form-control" id="exampleInputName1">
-                  </div>
-                  <div class="form-group">
-                    <label for="InputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="InputSubject1">Subject</label>
-                    <input type="text" class="form-control" id="exampleInputSubject1">
-                  </div>
-                  <div class="form-group">
-                    <label for="message1">Message</label>
-                    <textarea class="form-control" id="message1" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-theme">Submit</button>
-                </form>
-        </div>
+			<div class="sixteen columns google-map">
+				<div id="map_canvas" class="full-shadow" style="width: 100%; padding-top: 40%;">
+				</div>
+                <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+				<script src="{{"js/jquery.gmap.min.js"| prepend: site.url}}"></script>
+				<script>
+					jQuery('#map_canvas').gMap({
+						maptype: 'ROADMAP',
+						scrollwheel: false,
+						zoom: 18,
+						markers: [
+							{
+								address: 'Sidney', // Your Adress Here
+								html: '',
+								popup: false,
+							}
+						],
+					});
+				</script>
+			</div>
+	
+            <div class="clearfix"></div>
+
+            <div class="twelve columns">
+
+            <h4 class="headline">Contact Us</h4>
+            <p>We would be glad to have feedback from you. Drop us a line, whether it is a comment, a question, a work proposition or just a hello. You can use either the form below or the contact details on the right.</p>
+
+		<div class="ajax-contact-form">
+			<div class="form">
+			
+				<div class="form-holder">
+					<div class="notification canhide"></div>	
+										
+					<form id="frm_contact" name="frm_contact" action="contact.php" method="post">
+						
+						<div class="field">
+							<label for="name">Name &amp; Surname <span class="required">*</span></label>
+							<div class="inputs">
+								<input class="aweform" type="text" id="name" name="name" />
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="email">E-mail Address <span class="required">*</span></label>
+							<div class="inputs">
+								<input class="aweform" type="text" id="email" name="email" />
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="phone">Phone <span class="required">*</span></label>
+							<div class="inputs">
+								<input class="aweform small" type="text" id="phone" name="phone" />
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="subject">Subject</label>
+							<div class="inputs">
+								<select class="aweform" id="subject" name="subject">
+									<option value="General">General</option>
+									<option value="Photograph Selection">Photograph Selection</option>
+									<option value="Sales Department">Sales Department</option>
+								</select>
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="message">Message <span class="required">*</span></label>
+							<div class="inputs">
+								<textarea class="aweform" id="message" name="message" rows="30" cols="5"></textarea>
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="verify">Are you human? <span class="required">*</span></label>
+							<div class="inputs">
+								<div class="captcha">
+									<img src="tools/captcha/captcha.php" class="captcha-img" alt="Verification" width="200" height="70" />
+									<img src="images/refresh.png" class="change-captcha" alt="Change Text" title="Change Text" width="16" height="16" />
+									<br /><input class="aweform captcha autocomplete-off" type="text" id="verify" name="verify" />
+								</div>								
+							</div>  
+						</div>
+						
+						<div class="form-submit">
+							<button type="submit" id="submit" name="submit">Submit</button>   
+						</div>
+						
+					</form>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+			
+            </div>
+
+            <div class="four columns sidebar">
+                <h4 class="headline">Contact Info</h4>
+                		<ul class="list contact">
+						<li class="contact-address"><i class="fa fa-map-marker"></i><span><strong>Address:</strong> 103088, Ut wisi enim ad minim veniam, 27, of. 304</span></li>
+						<li class="contact-phone"><i class="fa fa-phone"></i><span><strong>Phone:</strong> +1 (229) 991-22-11</span></li>
+						<li class="contact-mail"><i class="fa fa-envelope"></i><strong>E-mail:</strong> <a href="#">mail@mail.com</a></li>
+						<li class="contact-address"><i class="fa fa-clock-o"></i><span><strong>Business Hours:</strong><br> Monday-Friday: 9:<sup>00</sup> - 18:<sup>00</sup><br>
+						Saturday: 10:<sup>00</sup> - 17:<sup>00</sup><br>
+						Sunday: closed</span>
+						</li>
+					</ul>
+            </div>
+				
+            <div class="clearfix"></div>
+				
+</div>
  -->
-        <div class="col-lg-6 col-offset-3">
-            <h4>联系我们</h4>
-            <div class="hline"></div>
-                <p>
-                    {% for line in site.address.first.lines %}
-                        {{ line }} <br>
-                    {% endfor %}
-                </p>
-<!--                 <p>
-                    Email: {{ site.email }}<br/>
-                    Tel: {{ site.tel }}
-                </p> -->
-                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
- -->        </div>
-    </div>
+
+<div class="container">
+<br><br><br><br>
+	<div class="sixteen columns google-map">
+	<div id="allmap" class="full-shadow" style="width: 100%;padding-top: 40%"></div>
+	 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3hxiMxCF4LlvrZK6uexQzLXM4BwRjj6z"></script>
+	<script type="text/javascript">
+		// 百度地图API功能
+		var map = new BMap.Map("allmap");    // 创建Map实例
+		map.centerAndZoom(new BMap.Point(118.779003,31.90244), 16);  // 初始化地图,设置中心点坐标和地图级别
+		map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+		map.setCurrentCity("南京");          // 设置地图显示的城市 此项是必须设置的
+		map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+	</script>
+</div>
+				<div class="sixteen columns">
+			    <h4 class="headline">联系我们</h4>
+            <p>我们致力于提供出色的客户服务。如要查询产品、获得技术支持及咨询法律问题，此处提供我们的联系方式。</p>
+
+                		<ul class="list contact">
+						<li class="contact-address"><i class="fa fa-map-marker"></i><span><strong>地址:</strong> 江苏南京江宁区隐龙路</span></li>
+						<li class="contact-phone"><i class="fa fa-phone"></i><span><strong>手机:</strong> 13605146966</span></li>
+						<li class="contact-mail"><i class="fa fa-envelope"></i><strong>邮箱:</strong> <a href=mailto:yiyuan86@126.com>yiyuan86@126.com</a></li>
+						<li class="contact-address"><i class="fa fa-user"></i><span><strong>联系人:</strong> 张先生</span>
+						</li>
+					</ul>
+            </div>
 </div>
