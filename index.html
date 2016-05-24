@@ -48,40 +48,70 @@ permalink: /
 Your most important message or catchy phrase goes here.</h3>
 </div>
  -->
+ <div class="four columns">
+  <div class="service">
+    <a href="#"><i class="fa fa-desktop colored square"></i></a>
+    <h3 class="centered"><a href="#" class="dark-link">更高效</a></h3>
+    <p class="centered">
+对半的制冷剂用量，却能制造相同的制冷效果。
+    </p>
+  </div>
+</div>
+<div class="four columns">
+  <div class="service">
+    <a href="#"><i class="fa fa-html5 colored square"></i></a>
+    <h3 class="centered"><a href="#" class="dark-link">更节能</a></h3>
+    <p class="centered">
+在制冷效果相同的情况下，节电可达20%以上。
+    </p>
+  </div>
+</div>
+<div class="four columns">
+  <div class="service">
+    <a href="#"><i class="fa fa-css3 colored square"></i></a>
+    <h3 class="centered"><a href="#" class="dark-link">更环保</a></h3>
+    <p class="centered">
+真正做到不破坏臭氧层，无温室效应。
+    </p>
+  </div>
+</div>
+<div class="four columns">
+  <div class="service">
+    <a href="#"><i class="fa fa-magic colored square"></i></a>
+    <h3 class="centered"><a href="#" class="dark-link">更便捷</a></h3>
+    <p class="centered">
+在大多数情况下，无需改装或更换冷冻液。
+    </p>
+  </div>
+</div>
 <div class="separator"></div>
 
-        <div class="five columns">
-          <!-- Icon Box -->
+        <div class="eight columns">
           <div class="service">
-            <h3 class="centered headline"><a href="#" class="dark-link">新闻中心</a></h3>
+            <h3 class="headline"><a href="#" class="dark-link">新闻中心</a></h3>
             {% for post in site.tags['news_center'] limit:3 %} 
                 <p><a href="{{ post.url | prepend: site.url }}">{{ post.title }}.</a></p>
             {% endfor %} 
 
           </div>
-          <!-- End Icon Box -->
         </div>
-        <div class="five columns">
-          <!-- Icon Box -->
+        <div class="eight columns">
           <div class="service">
-            <h3 class="centered headline"><a href="/case/" class="dark-link">最新案例</a></h3>
+            <h3 class="headline"><a href="/case/" class="dark-link">最新案例</a></h3>
             {% for post in site.tags['case'] limit:3 %} 
                 <p><a href="{{ post.url | prepend: site.url }}">{{ post.title }}.</a></p>
             {% endfor %} 
           </div>
-          <!-- End Icon Box -->
         </div>
-        <div class="five columns">
-          <!-- Icon Box -->
+        <!-- <div class="five columns">
           <div class="service">
             <h3 class="centered headline"><a href="#" class="dark-link">关注我们</a></h3>
             <p class="centered">
                         Professional, clutter-free and aesthetically simple design.     
             </p>
           </div>
-          <!-- End Icon Box -->
-        </div>
-        <!-- <div class="four columns">
+        </div>-->        
+         <!-- <div class="four columns">
           <div class="service">
             <h3 class="centered"><a href="#" class="dark-link">Feugait Nulla Facilisi</a></h3>
             <p class="centered">
