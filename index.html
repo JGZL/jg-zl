@@ -40,7 +40,7 @@ permalink: /
   </div>
   <!-- END REVOLUTION SLIDER
   ============================================= -->
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+<!-- <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div> -->
 <div class="container">
 
 <!-- <div class="sixteen columns welcome">
@@ -64,7 +64,7 @@ Your most important message or catchy phrase goes here.</h3>
         <div class="five columns">
           <!-- Icon Box -->
           <div class="service">
-            <h3 class="centered headline"><a href="#" class="dark-link">最新案例</a></h3>
+            <h3 class="centered headline"><a href="/case/" class="dark-link">最新案例</a></h3>
             {% for post in site.tags['case'] limit:3 %} 
                 <p><a href="{{ post.url | prepend: site.url }}">{{ post.title }}.</a></p>
             {% endfor %} 
