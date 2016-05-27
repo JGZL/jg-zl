@@ -9,7 +9,9 @@ permalink: /news/
 	<br><br><br>
 				<div class="ten columns">
 				<ul id="pag-itemContainer">
+				{% assign counter = 0 %}
 					{% for post in site.tags['news'] %}
+					{% assign counter = counter | plus: 1 %}
 					<li>
 					<div class="post-preview preview-medium">
 						<h2><a href="{{ post.url | prepend: site.url }}" class="dark-link">{{ post.title }}</a></h2>
@@ -35,7 +37,12 @@ permalink: /news/
 					</li>
     				{% endfor %}
     			</ul>
+    			{% if counter > 5 %}
     			<div class="pag-holder pagination"></div>
+    			{% endif %}
+    			{% if counter == 0 %}
+    			<p>非常抱歉，没有文章！</p>
+    			{% endif %}
 
 				</div>
 				<div class="four columns sidebar">
