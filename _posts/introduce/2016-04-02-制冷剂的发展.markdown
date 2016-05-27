@@ -7,7 +7,7 @@ categories:
 - currency
 - 制冷剂的发展
 tags:
-- our_prod
+- product
 img: 
 thumb: 
 ---

@@ -7,9 +7,7 @@ categories:
 - blog
 - 行业资讯
 tags:
-- news_center
-- jekyll
-- pagination
+- news
 news:
 - true
 img: 

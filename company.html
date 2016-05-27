@@ -7,8 +7,7 @@ permalink: /company/
 <div class="container">
 	<br><br><br>
 				<div class="ten columns">
-    				{% for post in site.posts %}
-    				{% if post.news != null %}
+					{% for post in site.tags['news'] %}
 					<div class="post-preview preview-medium">
 						<h2><a href="{{ post.url | prepend: site.url }}" class="dark-link">{{ post.title }}</a></h2>
 						<div class="post-meta">
@@ -30,7 +29,6 @@ permalink: /company/
 						</div>
         				<div class="clearfix"></div>
 					</div>
-					{% endif %}
     				{% endfor %}
 
 				</div>
