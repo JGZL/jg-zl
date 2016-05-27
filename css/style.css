@@ -148,11 +148,12 @@ a.work-name:hover {
 ==========================*/
 .header {
     width:100%;
+
     /*position:relative;*/
     /*margin:0px auto;*/
 	top:0px;
     position:fixed;
-	margin: 0;
+	margin: 0px;
 	background: #fff;
 	_position:absolute;/* 把导航栏位置定义为绝对位置  关键*/
 	_top:expression(documentElement.scrollTop + "px"); /* 把导航栏位置放在浏览器垂直滚动条的顶端  关键 */
