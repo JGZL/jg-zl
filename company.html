@@ -1,0 +1,47 @@
+---
+layout: company
+title: Company
+permalink: /company/
+---
+
+<div class="container">
+	<br><br><br>
+				<div class="ten columns">
+    				{% for post in site.posts %}
+    				{% if post.news != null %}
+					<div class="post-preview preview-medium">
+						<h2><a href="{{ post.url | prepend: site.url }}" class="dark-link">{{ post.title }}</a></h2>
+						<div class="post-meta">
+							By <span class="meta-author"><a href="#">{{ post.author }}</a></span>
+							<span class="meta-date">on {{ post.date | date: "%-d %b %Y" }}</span>
+						</div>
+						{% if post.img %}
+						<a href="{{ post.url | prepend: site.url }}"  class="work-image">
+			                <img src="/images/news/{{ post.img }}" alt="{{ post.title }}">
+			                <div class="link-overlay fa fa-chevron-right">
+			                </div>
+            			</a>
+   						{% endif %}
+						<div class="eight columns omega">
+							<p>
+								{{ post.content | strip_html | truncate:100 }}
+							</p>
+							<a class="btn colored" href="{{ post.url | prepend: site.url }}">更多<i class="fa fa-chevron-circle-right" style="margin: 0 0 0 7px;"></i></a>
+						</div>
+        				<div class="clearfix"></div>
+					</div>
+					{% endif %}
+    				{% endfor %}
+
+				</div>
+				<div class="four columns sidebar">
+					<h3>新闻中心</h3>
+					<ul class="categories">
+						<li><a href="/company/">公司新闻</a></li>
+						<li><a href="/news/">行业资讯</a></li>
+					</ul>
+				</div>
+				
+   				<div class="clearfix"></div>
+				
+</div>

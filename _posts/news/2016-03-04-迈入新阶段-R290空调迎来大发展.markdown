@@ -10,6 +10,8 @@ tags:
 - news_center
 - jekyll
 - pagination
+news:
+- true
 img: 
 thumb: 
 ---
