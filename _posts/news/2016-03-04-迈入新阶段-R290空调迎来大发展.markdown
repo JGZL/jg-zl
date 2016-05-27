@@ -8,8 +8,6 @@ categories:
 - 行业资讯
 tags:
 - news
-news:
-- true
 img: 
 thumb: 
 ---

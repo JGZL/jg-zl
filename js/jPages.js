@@ -437,26 +437,26 @@
 
     updateBtns : function(nav, page) {
       if (page === 1) {
-        nav.first.addClass("jp-disabled");
-        nav.previous.addClass("jp-disabled");
+        nav.first.addClass("active");
+        nav.previous.addClass("active");
       }
       if (page === this._numPages) {
-        nav.next.addClass("jp-disabled");
-        nav.last.addClass("jp-disabled");
+        nav.next.addClass("active");
+        nav.last.addClass("active");
       }
       if (this._currentPageNum === 1 && page > 1) {
-        nav.first.removeClass("jp-disabled");
-        nav.previous.removeClass("jp-disabled");
+        nav.first.removeClass("active");
+        nav.previous.removeClass("active");
       }
       if (this._currentPageNum === this._numPages && page < this._numPages) {
-        nav.next.removeClass("jp-disabled");
-        nav.last.removeClass("jp-disabled");
+        nav.next.removeClass("active");
+        nav.last.removeClass("active");
       }
     },
 
     updateCurrentPage : function(nav, page) {
-      nav.currentPage.removeClass("jp-current");
-      nav.currentPage = nav.pages.eq(page - 1).addClass("jp-current");
+      nav.currentPage.removeClass("active");
+      nav.currentPage = nav.pages.eq(page - 1).addClass("active");
     },
 
     updatePagesShowing : function(nav, interval) {

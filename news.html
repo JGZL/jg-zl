@@ -1,7 +1,7 @@
 ---
-layout: company
-title: Company
-permalink: /company/
+layout: news
+title: News
+permalink: /news/
 ---
 
 
@@ -9,7 +9,7 @@ permalink: /company/
 	<br><br><br>
 				<div class="ten columns">
 				<ul id="pag-itemContainer">
-					{% for post in site.tags['company'] %}
+					{% for post in site.tags['news'] %}
 					<li>
 					<div class="post-preview preview-medium">
 						<h2><a href="{{ post.url | prepend: site.url }}" class="dark-link">{{ post.title }}</a></h2>
