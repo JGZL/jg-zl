@@ -4,10 +4,14 @@ title: Company
 permalink: /company/
 ---
 
+
 <div class="container">
 	<br><br><br>
 				<div class="ten columns">
+				<div class="pag-holder"></div>
+				<ul id="pag-itemContainer">
 					{% for post in site.tags['news'] %}
+					<li>
 					<div class="post-preview preview-medium">
 						<h2><a href="{{ post.url | prepend: site.url }}" class="dark-link">{{ post.title }}</a></h2>
 						<div class="post-meta">
@@ -29,7 +33,10 @@ permalink: /company/
 						</div>
         				<div class="clearfix"></div>
 					</div>
+					</li>
     				{% endfor %}
+    			</ul>
+    			<div class="pag-holder"></div>
 
 				</div>
 				<div class="four columns sidebar">

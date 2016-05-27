@@ -15,6 +15,8 @@
   ================================================== -->
 	<link rel="stylesheet" href="{{"css/style.css" | prepend: site.url}}">
 	<link rel="stylesheet" type="text/css" href="{{"css/settings.css"  | prepend: site.url}}" media="screen"/>
+	<link rel="stylesheet" href="{{"css/jPages.css" | prepend: site.url}}">
+	<link rel="stylesheet" href="{{"css/animate.css" | prepend: site.url}}">
 
     <!-- JS
   ================================================== -->
@@ -27,6 +29,7 @@
   
     <!-- Responsive Menu -->
     <script src="{{"js/jquery.meanmenu.js" | prepend: site.url}}"></script> 
+
     <script>
     jQuery(document).ready(function () {
     jQuery('header nav').meanmenu();
@@ -40,9 +43,6 @@
 	
 	<!-- Prety photo -->
 	<script src="{{"js/jquery.prettyPhoto.js" | prepend: site.url}}"></script>
-	<script type="text/javascript">
-		
-	</script>
 	<script>
 		$(document).ready(function(){
 			$("a[data-gal^='prettyPhoto']").prettyPhoto();
@@ -62,5 +62,22 @@
 	<link rel="apple-touch-icon" href="{{"images/apple-touch-icon.png" | prepend: site.url}}">
 	<link rel="apple-touch-icon" sizes="72x72" href="{{"images/apple-touch-icon-72x72.png" | prepend: site.url}}">
 	<link rel="apple-touch-icon" sizes="114x114" href="{{"images/apple-touch-icon-114x114.png" | prepend: site.url}}"> -->
+	<script src="{{"js/jPages.js" | prepend: site.url}}"></script>
+	<script src="{{"js/js.js" | prepend: site.url}}"></script>
+  <script type="text/javascript">
+    /* when document is ready */
+      $(function(){
+        /* initiate the plugin */
+        $("div.pag-holder").jPages({
+            containerID  : "pag-itemContainer",
+            perPage      : 3,
+            startPage    : 1,
+            startRange   : 1,
+            midRange     : 5,
+            endRange     : 1
+        });
+    });
+  </script>
+
 
 </head>
