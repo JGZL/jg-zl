@@ -85,13 +85,27 @@ Your most important message or catchy phrase goes here.</h3>
 </div>
 <div class="separator"></div>
 
-        <div class="twenty columns">
+        <div class="nine columns">
             <div class="promo-box clearfix">
                 <div class="text">
                 <h3>新闻中心</h3>
-                <p>Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                {% for post in site.tags['news'] limit:3 %} 
+                    <p><a href="{{ post.url | prepend: site.url }}">{{ post.title }}.</a></p>
+                {% endfor %} 
                 </div>
-                <a class="btn big colored" href="#"><i class="fa fa-hand-o-right"></i>Button Text</a>
+                <a class="btn big colored" href="/company/"><i class="fa fa-hand-o-right"></i>详细内容</a>
+            </div>  
+        </div>  
+        <div class="two columns"><br></div>
+        <div class="nine columns">
+            <div class="promo-box clearfix">
+                <div class="text">
+                <h3>最新案例</h3>
+                {% for post in site.tags['case'] limit:3 %} 
+                    <p><a href="{{ post.url | prepend: site.url }}">{{ post.title }}.</a></p>
+                {% endfor %} 
+                </div>
+                <a class="btn big colored" href="/case/"><i class="fa fa-hand-o-right"></i>详细内容</a>
             </div>  
         </div>  
 
