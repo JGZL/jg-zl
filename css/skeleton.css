@@ -20,9 +20,9 @@ Author: alphawd
 /* #Base 960 Grid
 ================================================== */
 
-    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container                                  { position: relative; width: 1200px; margin: 0 auto; padding: 0; }
     .container .column,
-    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .container .columns                         { float: left; display: inline; margin-left: 0px; margin-right: 0px; }
     .row                                        { margin-bottom: 20px; }
 
     /* Nested Column Classes */
@@ -48,6 +48,7 @@ Author: alphawd
     .container .fourteen.columns                { width: 820px; }
     .container .fifteen.columns                 { width: 880px; }
     .container .sixteen.columns                 { width: 940px; }
+    .container .twenty.columns                 { width: 1180px; }
 
     .container .one-third.column                { width: 300px; }
     .container .two-thirds.column               { width: 620px; }
