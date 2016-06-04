@@ -1,31 +1,36 @@
 ---
 layout: default
 ---
-
-{% include wrap.html %}
-
-<div class="container mtb">
+<div class="container">
+	<br>
+    <br>
+    <br>
     <div class="row">
-        <! -- SINGLE POST -->
-        <div class="col-lg-8">
-            <! -- Blog Post  -->
-            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
-            <a href="{{ page.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ page.title }}</h3></a>
-            <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
-              
-            {{ content }}
 
-            <div class="spacing"></div>
-            <!-- <h6>SHARE:</h6>
-            <p class="share">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-tumblr"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>		 		
-            </p> -->
-        </div><! --/col-lg-8 -->
-        
-        {% include sidebar.html %}
+<div class="eleven columns">
+  {% if page.img %}
+	<img style="margin-bottom:20px;" src="/images/blog/{{ page.img }}" alt="金冠制冷" />
+  {% endif %}
+	<a href="{{ page.url | prepend: site.url }}"><h3 class="ctitle">{{ page.title }}</h3></a>
+    <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
 
-    </div><! --/row -->
-</div><! --/container -->
+    {{ content}}	
+	
+</div>
+<div class="four columns sidebar">
+          <h3>新闻中心</h3>
+          <ul class="categories">
+            <li><a href="/company/">公司新闻</a></li>
+            <li><a href="/news/">行业资讯</a></li>
+          </ul>
+
+          <h3>产品介绍</h3>
+          <ul class="categories">
+            <li><a href="/development/">制冷剂的发展</a></li>
+            <li><a href="/product/">我们的产品</a></li>
+          </ul>
+
+        </div>
+                <div class="clearfix"></div>
+</div>
+</div>

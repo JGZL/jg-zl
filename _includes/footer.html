@@ -1,29 +1,142 @@
-<div id="footerwrap">
+<footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h4>About</h4>
-                <div class="hline-w"></div>
-                <p>{{ site.about }}</p>
+  <div class="footer-top clearfix">
+  <div class="ten columns">
+  <h3>友情链接</h3>
+  <div class="three columns">
+    <a href="http://www.jnjc.org/" target="black">全国节能监测管理中心</a>
+  </div>
+  <div class="three columns">
+    <a href="http://www.coldchina.com/" target="black">中国制冷网</a>
+  </div>
+  </div>
+<!--   <div class="four columns">
+            <h3>Latest Tweets</h3>
+            <div class="twitter">
+              <ul>
+                <li>
+                  <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <a href="#" class="link">http://twitter.com</a></span>
+                  <span class="twit-date">Jan 7, 2013</span>
+                </li>
+                <li>
+                  <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aliquid :) <a href="#" class="link">http://twitter.com</a></span>
+                  <span class="twit-date">Jan 7, 2013</span>
+                </li>
+              </ul>
             </div>
-            <div class="col-lg-4">
-                <h4>Social Links</h4>
-                <div class="hline-w"></div>
-                <p>
-                    {% for network in site.social %}
-                        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
-                    {% endfor %}
-                </p>
+</div>
+<div class="four columns">
+<h3>Flickr Stream</h3>
+            <div class="latest-project">
+              <div class="latest-project-item">
+                <a href="#"><img src="images/elements/rp-1.jpg" alt=""></a>
+              </div>
+              <div class="latest-project-item">
+                <a href="#"><img src="images/elements/rp-2.jpg" alt=""></a>
+              </div>
+              <div class="latest-project-item">
+                <a href="#"><img src="images/elements/rp-3.jpg" alt=""></a>
+              </div>
+              <div class="latest-project-item">
+                <a href="#"><img src="images/elements/rp-4.jpg" alt=""></a>
+              </div>
+              <div class="latest-project-item">
+                <a href="#"><img src="images/elements/rp-5.jpg" alt=""></a>
+              </div>
+              <div class="latest-project-item">
+                <a href="#"><img src="images/elements/rp-6.jpg" alt=""></a>
+              </div>
             </div>
-            <div class="col-lg-4">
-                <h4>Our Bunker</h4>
-                <div class="hline-w"></div>
-                <p>
-                    {% for line in site.address.first.lines %}
-                        {{ line }} <br>
-                    {% endfor %}
-                </p>
-            </div>
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/footerwrap -->
+</div>
+ -->
+<div class="ten columns">
+            <h3>联系我们</h3>
+            <ul class="list contact" style="margin-bottom: 15px;">
+              <li class="contact-address"><i class="fa fa-map-marker"></i><span>江苏南京江宁区隐龙路</span></li>
+              <li class="contact-mail"><i class="fa fa-envelope"></i><a class="link" href=mailto:yiyuan86@126.com>yiyuan86@126.com</a></li>
+              <li class="contact-phone"><i class="fa fa-phone"></i><span>13605146966</span></li>
+              <li class="contact-address"><i class="fa fa-user"></i><span>张先生</li>
+            </ul>
+    
+<!-- <div class="tooltips">      
+      <ul class="social-icons-footer">
+        <li><a href="#" data-rel="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" data-rel="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" data-rel="tooltip" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#" data-rel="tooltip" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+        <li><a href="#" data-rel="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#" data-rel="tooltip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+        <li><a href="#" data-rel="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+      </ul>
+</div>
+ -->
+</div>
+  </div>
+  </div>
+
+  <!-- <div class="container">
+  <div class="footer-bottom clearfix">
+  <div class="eight columns">
+  </div>
+  <div class="eight columns">
+  <nav class="footer-nav">
+<ul>
+<li>
+<a class="first" href="index.html">Home</a>
+/
+</li>
+<li>
+<a href="#">Shortcodes</a>
+/
+</li>
+<li>
+<a href="portfolio-2-columns.html">Portfolio</a>
+/
+</li>
+<li>
+<a href="blog-large.html">Blog</a>
+/
+</li>
+<li>
+<a href="contact.html">Contact</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+ -->  
+</footer><!-- footer -->
+
+<script type="text/javascript">
+
+$(window).load(function() {
+  $("#flexiselDemo2").flexisel({
+    visibleItems: 5,
+    animationSpeed: 1000,
+    autoPlay: true,
+    autoPlaySpeed: 3000,        
+    pauseOnHover: true,
+    enableResponsiveBreakpoints: true,
+      responsiveBreakpoints: { 
+        portrait: { 
+          changePoint:480,
+          visibleItems: 1
+        }, 
+        landscape: { 
+          changePoint:640,
+          visibleItems: 2
+        },
+        tablet: { 
+          changePoint:768,
+          visibleItems: 3
+        }
+      }
+    });
+    
+});
+</script>
+<!-- End Document
+================================================== -->
+</body>
+</html>
